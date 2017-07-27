@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--weui-->
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+<div class="animate">
+
+    <!--头部-->
+    <header>
+        <a href="javascript:window.history.back();" class="fanhui">
+            <i class="iconfont icon-zuobian"></i>
+        </a>
+        <h3>个人信息</h3>
+    </header>
+
+    <div class="setting">
+        <div class="content-info">
+            <ul>
+                <li>
+                    <span>姓名</span>
+                    <input type="text" placeholder="请输入您的姓名">
+                </li>
+                <li>
+                    <span>性别</span>
+                    <label for="x1">
+                        <i class="iconfont icon-danxuankuang"></i>男
+                        <input type="radio" id="x1" name="radio" checked="checked">
+                    </label>
+                    <label for="x2">
+                        <i class="iconfont icon-Check"></i>女
+                        <input type="radio" name="radio" id="x2">
+                    </label>
+                </li>
+                <li>
+                    <span>联系电话</span>
+                    <input type="tel" placeholder="请输入您的手机号">
+                </li>
+                <li>
+                    <span>地址</span>
+                    <input type="text" id="start" type="text" value="" placeholder="请输入您的地址" >
+                </li>
+                <textarea name="" id="" cols="30" rows="6" placeholder="详细地址:"></textarea>
+            </ul>
+        </div>
+        <div class="button">
+            <button>确定</button>
+        </div>
+    </div>
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--weui-->
+<script src="js/jquery-weui.min.js"></script>
+<!--地址-->
+<script src="js/city-picker.js"></script>
+
+<script src="js/animation.js"></script>
+
+<script src="js/icheck.js"></script>
+
+<script>
+    $("#start").cityPicker({
+        title: "选择地址",
+    });
+</script>
+</html>

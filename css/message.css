@@ -1,0 +1,32 @@
+.message-info{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.message-info ul li{
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0;
+    color: #646464;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-bottom: 1px solid #e3e3e3;
+    background: url("../images/message.png") no-repeat top right;
+    background-size: 60px 40px;
+}
+.message-info ul li p{
+    line-height: 25px;
+}
+.times{
+    color: #b0b0b0;
+    font-size: 13px;
+}
+.message-info ul li p .iconfont{
+    font-size: 13px;
+    color: #fe6f22;
+}
+.message-info .inform{
+    font-size: 15px;
+    color: #555;
+}

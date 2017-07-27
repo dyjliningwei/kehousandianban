@@ -1,0 +1,10 @@
+.weui-search-bar__cancel-btn{
+    color: #FE5400;
+}
+.weui-cells_radio .weui-check:checked+.weui-icon-checked:before{
+    color: #FE5400;
+}
+.address{
+    font-size: 13px;
+    color: #999;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业-老师</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--zyupload文件上传-->
+    <link rel="stylesheet" href="css/zyUpload.css">
+
+    <!--weui-->
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/fs_messages.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body style="margin-bottom: 60px;">
+<div class="animate">
+    <!--头部-->
+    <header>
+        <a href="javascript:window.history.back();" class="fanhui">
+            <i class="iconfont icon-zuobian"></i>
+        </a>
+        <h3>作业</h3>
+    </header>
+
+    <div class="assignment_teacher">
+
+        <div class="order-list-tab">
+            <div class="tab-header">
+                <div class="tabs">
+                    <ul>
+                        <li>
+                            <span class="active">发布作业</span>
+                        </li>
+                        <li>
+                            <span>作业列表</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-info">
+
+                <div class="details-list list-active">
+                    <div class="content-info">
+                        <ul>
+                            <li>
+                                <span>学校</span>
+                                <input class="weui-input" id="school" type="text" value="" placeholder="请选择学校">
+                            </li>
+                            <li>
+                                <span>班级</span>
+                                <input class="weui-input" id="class" type="text" value="" placeholder="请选择班级">
+                            </li>
+
+                        </ul>
+
+                        <div class="small-note-send">
+
+                            <!--图片上传-->
+
+                            <div class="img-upload">
+                                <div class="img-upload-info">
+                                    <div class="img-info">
+                                        <div id="zyupload" class="zyupload"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--语音-->
+
+                            <div class="voice">
+                                <div class="voice-left voice-start">
+                                    <i class="iconfont icon-yuyin"></i>
+                                </div>
+                                <div class="voice-right">
+                                    <canvas id="waves"></canvas>
+                                </div>
+                            </div>
+
+                            <!--文本-->
+
+                            <div class="text">
+                                <textarea name="" id="" cols="30" rows="6" placeholder="请输入发送内容"></textarea>
+                            </div>
+
+                            <div class="button">
+                                <button>发送</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-list">
+                    <div class="list">
+                        <div class="lists">
+                            <div class="lists-header">
+                                <h3>语文</h3>
+                            </div>
+                            <div class="lists-info">
+                                <ul>
+                                    <li>不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="lists">
+                            <div class="lists-header">
+                                <h3>数学</h3>
+                            </div>
+                            <div class="lists-info">
+                                <ul>
+                                    <li>不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--录音-->
+
+<div class="recording">
+
+    <div class="recording-time">
+        <span>录音时间:<em class="recording-times">00</em>秒</span>
+    </div>
+
+    <div class="recording-animation">
+        <i class="iconfont icon-yuyin"></i>
+    </div>
+
+    <button class="start">开始录音</button>
+</div>
+
+
+<!--遮罩-->
+
+<div class="shade"></div>
+
+<!--尾部-->
+<footer class="animate">
+    <ul class="clearfix">
+        <li>
+            <a href="assignment_teacher.html">
+                <i class="iconfont icon-zuoyeguanli"></i>
+                <p class="color">作业</p>
+            </a>
+        </li>
+        <li>
+            <a href="small_note.html">
+                <i class="iconfont icon-xiaoxi3"></i>
+                <p>小纸条</p>
+            </a>
+        </li>
+        <li>
+            <a href="leave.html">
+                <i class="iconfont icon-kaoqin1"></i>
+                <p>考勤</p>
+            </a>
+        </li>
+        <li>
+            <a href="message_teacher.html">
+                <i class="iconfont icon-tongzhi"></i>
+                <p>班级通知</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--tab切换-->
+<script src="js/tab.js"></script>
+<!--weui-->
+<script src="js/jquery-weui.min.js"></script>
+<!--zyupload文件上传-->
+<script type="text/javascript" src="js/zyFile.js"></script>
+<script src="js/zyUpload.js"></script>
+
+<script src="js/animation.js"></script>
+
+<script src="js/fs_messages.js"></script>
+
+<script>
+    $("#school").select({
+        title: "选择学校",
+        items: ["郑州一中", "郑州二中", "郑州三中", "郑州四中", "郑州五中", "郑州六中","郑州六中","郑州六中"],
+    });
+
+    $("#class").select({
+        title: "选择学校",
+        items: ["一年级一班", "一年级二班", "一年级三班", "一年级四班", "一年级五班"],
+    });
+</script>
+</html>

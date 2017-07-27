@@ -1,0 +1,101 @@
+.teacher-referral .banner{
+    width: 100%;
+    height: 200px;
+    background:url("../images/explore.jpg") no-repeat;
+    background-size: cover;
+}
+.teacher{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.teacher-header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.icon--laoshi{
+    font-size: 23px;
+    float: left;
+    color: #fc9522;
+    margin-right: 10px;
+}
+.teacher-header span{
+    font-size: 14px;
+}
+.teacher-info-honor{
+    width: 100%;
+    height: 150px;
+}
+.teacher-info-honor{
+    width: 100%;
+    height: 150px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    color: #555;
+}
+.swiper-slide ul li{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.swiper-slide ul li img{
+    width: 85px;
+    height: 85px;
+    margin: 0 10px;
+}
+.swiper-slide a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide a img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-progress .swiper-pagination-progressbar{
+    background-color: #FE5400;
+}
+.teacher-info{
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.teacher-info p{
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.teacher-info p span{
+    font-size: 15px;
+}
+.teacher-info p .indent{
+    display: block;
+    text-indent: 2em;
+}

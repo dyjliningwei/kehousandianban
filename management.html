@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报名信息管理</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/management.css">
+</head>
+<body>
+<div class="animate">
+
+    <!--头部-->
+    <header>
+        <a href="javascript:window.history.back();" class="fanhui">
+            <i class="iconfont icon-zuobian"></i>
+        </a>
+        <h3>信息管理</h3>
+    </header>
+
+    <div class="management">
+        <ul>
+            <li>
+                <p>
+                    <span>不知道</span>
+                    <span class="fr">13000000000</span>
+                </p>
+                <p>
+                    <span>家长:不知道</span>
+                    <span class="fr">学生:不知道</span>
+                </p>
+                <p>
+                    <span>班级:一年级一班</span>
+                </p>
+                <p>
+                    <label for="x1">
+                        <i class="iconfont icon-danxuankuangyixuanzhong"></i>设为默认
+                        <input type="radio" id="x1" name="radio" checked="checked">
+                    </label>
+
+                    <span class="fr">
+                        <button class="compile">编辑</button>
+                        <button class="delete">删除</button>
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <span>不知道</span>
+                    <span class="fr">13000000000</span>
+                </p>
+                <p>
+                    <span>家长:不知道</span>
+                    <span class="fr">学生:不知道</span>
+                </p>
+                <p>
+                    <span>班级:一年级一班</span>
+                </p>
+                <p>
+                    <label for="x2">
+                        <i class="iconfont icon-Check"></i>设为默认
+                        <input type="radio" id="x2" name="radio">
+                    </label>
+                    <span class="fr">
+                        <button class="compile">编辑</button>
+                        <button class="delete">删除</button>
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <span>不知道</span>
+                    <span class="fr">13000000000</span>
+                </p>
+                <p>
+                    <span>家长:不知道</span>
+                    <span class="fr">学生:不知道</span>
+                </p>
+                <p>
+                    <span>班级:一年级一班</span>
+                </p>
+                <p>
+                    <label for="x3">
+                        <i class="iconfont icon-Check"></i>设为默认
+                        <input type="radio" id="x3" name="radio">
+                    </label>
+                    <span class="fr">
+                        <button class="compile">编辑</button>
+                        <button class="delete">删除</button>
+                    </span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--报名-->
+
+<div class="apply-add animate">
+    <button>
+        <i class="iconfont icon-8"></i>
+        新增报名信息
+    </button>
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--layer弹窗-->
+<script src="js/layer_mobile/layer.js"></script>
+
+<script src="js/animation.js"></script>
+
+<script src="js/management.js"></script>
+
+<script>
+    $('.apply-add button').on('click', function () {
+        window.location.href = "apply_form.html";
+    })
+</script>
+</html>

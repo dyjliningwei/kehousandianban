@@ -1,0 +1,102 @@
+body{
+    background-color: #e3e3e3;
+    margin-bottom: 50px;
+}
+.orders-add{
+    width: 100%;
+    height: 86px;
+    text-align: center;
+    background-color: #fff;
+}
+.orders-add button{
+    width: 65%;
+    height: 40px;
+    background-color: #FE5400;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 23px;
+}
+.orders-add button i{
+    margin-right: 10px;
+}
+.user-info{
+    background-color: #fff;
+    padding:10px;
+    box-sizing: border-box;
+}
+.user-info-left,.user-info-right{
+    width: 15%;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+}
+.user-info-right{
+    text-align: right;
+}
+.user-info-center{
+    width: 70%;
+    float: left;
+}
+.user-info-center p{
+    font-size: 13px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+.user-info .icon-wanjiaxinxi{
+    font-size: 21px;
+    color: #555;
+}
+.icon-youbian{
+    color: #808080;
+}
+.orders-info{
+    width: 100%;
+    margin-top: 10px;
+}
+.orders-info ul,.class-info{
+    background-color: #fff;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.orders-info ul li{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+.payment{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 1000;
+}
+.payment span{
+    font-size: 15px;
+    color: #555;
+    line-height: 50px;
+}
+.payment span em{
+    color: #C81623;
+}
+.payment button{
+    float: right;
+    width: 120px;
+    height: 100%;
+    background-color: #FE5400;
+    color: #fff;
+    font-size: 15px;
+}
+.line {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(113deg, #FE5400 0%,#FE5400 25%,#fff 25%,#fff 50%,#FE5400 50%,#FE5400 75%,#fff 75%,#fff 100%);
+    background-size: 40px 92px;
+}

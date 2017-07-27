@@ -1,0 +1,143 @@
+.faculty .banner{
+    width: 100%;
+    height: 200px;
+    background:url("../images/explore.jpg") no-repeat;
+    background-size: cover;
+}
+.organization,.mien,.activity,.contact-us{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.organization h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+.organization-info-header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.organization-info-header .icon-jigoubanji{
+    font-size: 23px;
+    color: #ee7d82;
+    float: left;
+    margin-right: 10px;
+}
+.organization-info-content span{
+    display: block;
+    text-indent: 2em;
+    line-height: 25px;
+}
+.mien-header,.activity-header,.contact-us-header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.icon-cai,.icon-huodong,.icon-dianhua{
+    font-size: 23px;
+    float: left;
+    color: #d2297a;
+    margin-right: 10px;
+}
+.icon-huodong{
+    color: #24b0fc;
+}
+.icon-dianhua{
+    color: #ec817c;
+}
+.icon--laoshi{
+    color: #fc9522;
+}
+.mien-header span,.activity-header span,.contact-us-header span{
+    font-size: 14px;
+}
+.mien-info{
+    width: 100%;
+    height: 150px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    color: #555;
+}
+.swiper-slide ul li{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.swiper-slide ul li img{
+    width: 85px;
+    height: 85px;
+    margin: 0 10px;
+}
+.swiper-slide a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide a img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-progress .swiper-pagination-progressbar{
+    background-color: #FE5400;
+}
+.activity-info,.contact-us-info{
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.activity-info span{
+    display: block;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.contact-us-info p{
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.contact-us-info p span{
+    font-size: 14px;
+}
+.contact-us-info p span{
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contact-us-info p i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FE5400;
+}

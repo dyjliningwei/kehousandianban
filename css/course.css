@@ -1,0 +1,149 @@
+body {
+    background-color: #e3e3e3;
+}
+.banner{
+    width: 100%;
+    height: 130px;
+}
+.course-banner {
+    width: 100%;
+    height: 180px;
+    background: url("../images/explore.jpg") no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1800px) {
+    .course-info, .course-introduce, .hint ,.train-details{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .course-info ul li span {
+        font-size: 13px;
+    }
+
+    .course-info ul, .course-introduce-info, .hint-info {
+        background-color: #fff;
+        padding: 0 15px;
+        padding-bottom: 20px;
+    }
+
+    .course-info ul li {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .hint-info ul li {
+        width: 100%;
+        height: 45px;
+        line-height: 25px;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+    .course-info, .course-introduce, .hint,.train-details {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .course-info ul li span {
+        font-size: 12px;
+    }
+
+    .course-info ul, .course-introduce-info, .hint-info {
+        background-color: #fff;
+        padding: 0 8px;
+        padding-bottom: 20px;
+    }
+
+    .course-info ul li {
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .hint-info ul li {
+        width: 100%;
+        height: 45px;
+        line-height: 25px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+.icon-baomingzhong,.icon-baomingjiezhi {
+    float: right;
+    margin-top: 10px;
+    font-size: 46px;
+    color: #09bd6c;
+}
+
+.icon-baomingjiezhi {
+    color: #555;
+}
+.referral {
+    color: #555;
+}
+
+.course-info ul li button {
+    width: 100px;
+    height: 36px;
+    background-color: #fecb6e;
+    border-radius: 3px;
+    background-color: #FE5400;
+    color: #fff;
+    line-height: 35px;
+}
+
+.course-introduce span {
+    display: block;
+    line-height: 25px;
+}
+
+.course-introduce h3, .hint-info h3 {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.course-introduce-info ul li {
+    width: 50%;
+    height: 130px;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.course-introduce-info ul li img {
+    width: 120px;
+    height: 120px;
+}
+.course-introduce-info>span{
+    text-indent: 2em;
+}
+.train-details ul li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+.train-details ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #555;
+}
+.train-details .icon-youbian{
+    font-size: 13px;
+    color: #999;
+}
+.teacher{
+    border-top: 1px solid #eee;
+}

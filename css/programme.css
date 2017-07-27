@@ -1,0 +1,51 @@
+.tab-info{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.programme-info{
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.programme-info ul li{
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 10px;
+}
+.programme-info ul li span{
+    display: block;
+    width: 100%;
+    color: #555;
+    font-size: 15px;
+    line-height: 35px;
+}
+.programme-info ul li span i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.programme-info .icon-kecheng{
+    color: #42cc7c;
+}
+.programme-info .icon-jiaolian1{
+    color: #ffb071;
+}
+.programme-info .icon-shijian{
+    color: #64cca1;
+}
+.items{
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+}
+.items ul li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #555;
+}

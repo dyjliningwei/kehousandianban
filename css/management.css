@@ -1,0 +1,61 @@
+body{
+    background-color: #d4d4d4;
+    margin-bottom: 60px;
+}
+.management ul li{
+    width: 100%;
+    margin: 5px 0;
+    background-color: #fff;
+    padding: 10px 10px;
+}
+.management ul li p{
+    width: 100%;
+    min-height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+}
+.management ul li p:last-child{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px dashed #ccc;
+}
+
+.management ul li p label .iconfont{
+    font-size: 20px;
+    float: left;
+    line-height: 40px;
+    margin-right: 5px;
+    color: #555;
+}
+.management ul li p label input[type="radio"]{
+    display: none;
+}
+.management ul li p label .icon-danxuankuangyixuanzhong{
+    color: #FE5400;
+}
+.management ul li p span button{
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #808080;
+    border: 1px solid #a4a4a4;
+}
+.apply-add{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+.apply-add button{
+    width: 100%;
+    height: 100%;
+    background-color: #FE5400;
+    color: #fff;
+}
+.icon-youbian{
+    color: #999;
+}

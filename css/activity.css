@@ -1,0 +1,98 @@
+body{
+    background-color: #e3e3e3;
+}
+.banner{
+    width: 100%;
+    height: 130px;
+}
+.news{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.news a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news a .iconfont{
+    font-size: 30px;
+}
+.news a span{
+    font-size: 15px;
+}
+.icon-redian{
+    margin-right: 10px;
+    color: #C81623;
+}
+.icon-youbian{
+    font-size: 18px !important;
+}
+@media screen and (min-width: 320px) and (max-width: 1800px){
+    .activity-details ul li{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 320px){
+
+    .activity-details ul li{
+        font-size: 13px;
+    }
+}
+.activity-details{
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.activity-details ul{
+    width: 100%;
+    background-color: #fff;
+    padding: 8px;
+    line-height: 35px;
+}
+.activity-details ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.activity-details ul li button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #FE5400;
+    color: #fff;
+}
+.activity-introduce{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.activity-introduce h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.activity-introduce ul{
+    background-color: #fff;
+}
+.activity-introduce ul li{
+    width: 50%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+}
+.activity-introduce ul li img{
+    width: 100px;
+    height: 100px;
+}
+.activity-introduce span{
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+    text-indent: 2em;
+    line-height: 25px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小纸条</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!--zyupload文件上传-->
+    <link rel="stylesheet" href="css/zyUpload.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/fs_messages.css">
+</head>
+<body style="margin-bottom: 60px;">
+<div class="animate">
+
+    <!--头部-->
+    <header>
+        <a href="javascript:window.history.back();" class="fanhui">
+            <i class="iconfont icon-zuobian"></i>
+        </a>
+        <h3>小纸条</h3>
+    </header>
+
+    <div class="small-note">
+
+        <div class="order-list-tab">
+            <div class="tab-header">
+                <div class="tabs">
+                    <ul>
+                        <li>
+                            <span class="active">发送小纸条</span>
+                        </li>
+                        <li>
+                            <span>小纸条列表</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-info">
+
+                <div class="details-list list-active">
+                    <div class="small-note-send" style='padding: 10px'>
+
+                        <!--联系人选择-->
+
+                        <div class="linkman">
+                            <span class="fl">请选择小纸条接收人</span>
+                            <i class="iconfont icon-youbian fr"></i>
+                        </div>
+
+                        <!--图片上传-->
+
+                        <div class="img-upload">
+                            <div class="img-upload-info">
+                                <div class="img-info">
+                                    <div id="zyupload" class="zyupload"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--语音-->
+
+                        <div class="voice">
+                            <div class="voice-left voice-start">
+                                <i class="iconfont icon-yuyin"></i>
+                            </div>
+                            <div class="voice-right">
+                                <div class="yuyin1">
+                                    <div class="yuyin_jt"></div>
+                                    <img src="images/audio2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--文本-->
+
+                        <div class="text">
+                            <textarea name="" id="" cols="30" rows="6" placeholder="请输入发送内容"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button>发送</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details-list">
+                    <div class="small-note-content">
+                        <div class="items" style="background-image: url('./images/read1.png');">
+                            <ul>
+                                <li class="time">2017-08-01&nbsp;10:00:00</li>
+                                <li>
+                                    <i class="iconfont icon-fasong"></i>
+                                    您发给郭家豪同学的爸爸郭鹏宇
+                                </li>
+                                <div class="yuyin">
+                                    <div class="yuyin_jt"></div>
+                                    <div class="yuyin-bf"></div>
+                                    <div class="yuyin-bf"></div>
+                                    <div class="yuyin-bf"></div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="items" style="background-image: url('./images/read2.png');">
+                            <ul>
+                                <li class="time">2017-08-01&nbsp;10:00:00</li>
+                                <li>
+                                    <i class="iconfont icon-fasong"></i>
+                                    您发给郭家豪同学的爸爸郭鹏宇
+                                </li>
+                                <div class="yuyin">
+                                    <div class="yuyin_jt"></div>
+                                    <div class="yuyin-bf"></div>
+                                    <div class="yuyin-bf"></div>
+                                    <div class="yuyin-bf"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--录音-->
+
+<div class="recording">
+
+    <div class="recording-time">
+        <span>录音时间:<em class="recording-times">00</em>秒</span>
+    </div>
+
+    <div class="recording-animation">
+        <i class="iconfont icon-yuyin"></i>
+    </div>
+
+    <button class="start">按住录音</button>
+</div>
+
+
+<!--遮罩-->
+
+<div class="shade"></div>
+
+<!--尾部-->
+<footer class="animate">
+    <ul class="clearfix">
+        <li>
+            <a href="assignment_teacher.html">
+                <i class="iconfont icon-iconzuoye"></i>
+                <p>作业</p>
+            </a>
+        </li>
+        <li>
+            <a href="small_note.html">
+                <i class="iconfont icon-xiaoxi"></i>
+                <p class="color">小纸条</p>
+            </a>
+        </li>
+        <li>
+            <a href="leave.html">
+                <i class="iconfont icon-kaoqin1"></i>
+                <p>考勤</p>
+            </a>
+        </li>
+        <li>
+            <a href="message_teacher.html">
+                <i class="iconfont icon-tongzhi"></i>
+                <p>班级通知</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--swiper-->
+<script src="js/swiper.jquery.min.js"></script>
+<!--tab切换-->
+<script src="js/tab.js"></script>
+<!--zyupload文件上传-->
+<script type="text/javascript" src="js/zyFile.js"></script>
+<script src="js/zyUpload.js"></script>
+
+<script src="js/animation.js"></script>
+
+<script src="js/fs_messages.js"></script>
+</html>

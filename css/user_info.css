@@ -1,0 +1,72 @@
+body{
+    margin-bottom: 60px;
+}
+.icon-Check,.icon-danxuankuangyixuanzhong,.icon-bianji{
+    font-size: 23px;
+    color: #555;
+}
+.icon-bianji{
+    color: #808080;
+}
+.icon-danxuankuangyixuanzhong{
+    color: #FE5400;
+}
+.user-item{
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.user-left,.user-right{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.user-left label{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.user-left label input[type="radio"]{
+    display: none;
+}
+.user-left i,.user-right i{
+    line-height: 90px;
+}
+.user-right i{
+    font-size: 18px;
+}
+.user-center{
+    width: 60%;
+    float: left;
+}
+.user-center ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.user-center ul li span{
+    font-size: 14px;
+}
+.user-center ul>span{
+    color: #FE5400;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+.orders-add{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+.orders-add button{
+    width: 100%;
+    height: 100%;
+    background-color: #FE5400;
+    color: #fff;
+}

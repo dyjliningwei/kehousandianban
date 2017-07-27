@@ -1,0 +1,37 @@
+.weui-panel{
+    border-top: 10px solid #eee;
+}
+.willnum .weui-media-box_appmsg .weui-media-box__hd{
+    width: 40px;
+    height: 40px;
+}
+.willnum .weui-media-box_appmsg .weui-media-box__hd img{
+    border-radius: 50%;
+}
+.willnum .weui-panel__hd{
+    color: #000;
+    font-size: 15px;
+}
+.willnum .name{
+    font-size: 14px;
+    color: #999;
+    line-height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+.zzbs {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    background: #e9e9e9;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+.fz_teacher {
+    background: #f9a624;
+}
+.xy_teacher {
+    background: #9de261;
+}

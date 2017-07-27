@@ -1,0 +1,32 @@
+.tabs{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+}
+.tabs ul li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #555;
+}
+.tabs.tab-3 ul li{
+    width: 33.3% !important;
+}
+.tabs ul li span{
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid transparent;
+}
+.tabs ul li span.active{
+    border-bottom: 2px solid #FE5400;
+}
+.tab-info ul{
+    width: 100%;
+}
+.tab-info .details-list{
+    display: none;
+}
+.tab-info .details-list.list-active{
+    display: block;
+}
