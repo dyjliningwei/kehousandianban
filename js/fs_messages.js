@@ -6,7 +6,6 @@
 $(function () {
 
 
-
     // 点击录音弹出录音框
 
     $('.voice-start').on('click',function () {
@@ -89,6 +88,7 @@ $(function () {
 
     })
 
+
     // 小纸条列表语音播放
 
     var yuyin=$('.yuyin');
@@ -96,6 +96,7 @@ $(function () {
     $.each(yuyin,function () {
         $(this).on('click', function () {
             $(this).find('.yuyin-bf').toggleClass('actives');
+            $(this).parent().parent().siblings().find('.yuyin-bf').removeClass('actives');
         })
     })
 
