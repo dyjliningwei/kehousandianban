@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>老师-考勤</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--weui-->
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body style="margin-top: 135px;">
+<div class="tea-kaoqin">
+    <div class="fixed">
+        <div class="tea-header clearfix">
+            <div class="tea-c">
+                <a href="javascript:window.history.go(-1);" class="fl">
+                    <i class="iconfont icon-zuobian"></i>
+                </a>
+                <span style="font-size: 15px; margin-left: 10px;color: #fff">智学教育</span>
+                <a href="javascript:;" class="fr">
+                    <i class="iconfont icon-tuichu1"></i>
+                </a>
+            </div>
+            <div class="header-log fl">
+                <img src="images/header.jpg" alt="">
+            </div>
+            <div class="header-info fl">
+                <div class="info-content">
+                    <div class="tea-x fr clearfix">
+                        <a href="tea_mes.html" class="mes fr">
+                            <i class="iconfont icon-xiaoxi2"></i>
+                            消息</a>
+                        <a href="tea_kaoqin.html" class="fr">
+                            <i class="iconfont icon-zhuce"></i>
+                            考勤
+                        </a>
+                    </div>
+                    <p style="margin-top: 5px;">
+                        <span>李宁</span>
+                    </p>
+
+                    <p>
+                        <span>共10门课程</span>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tea-list" style="border-top: 5px solid #eee;">
+        <div class="weui-cells margen-top">
+            <div class="weui-cell">
+                <div class="weui-cell__bd margin">
+                    <p>青青社团</p>
+                    <p class="font color">
+                        <span>共100人</span>
+                    </p>
+                </div>
+                <div class="weui-cell__ft margin">
+                    <p>签到次数</p>
+                    <p class="font color">
+                        <span>共签到20次</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells margen-top">
+            <div class="weui-cell">
+                <div class="weui-cell__bd margin">
+                    <p>蓝蓝社团</p>
+                    <p class="font color">
+                        <span>共100人</span>
+                    </p>
+                </div>
+                <div class="weui-cell__ft margin">
+                    <p>签到次数</p>
+                    <p class="font color">
+                        <span>共签到20次</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--layer-->
+<script src="js/layer/layer.js"></script>
+<script>
+    $('.tea-list .weui-cells').each(function () {
+        $(this).on('click',function () {
+            layer.open({
+                type: 2,
+                title: '签到信息(共签到9次)',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['90%', '60%'],
+                content: 'tea_kaoqin_info.html' //iframe的url
+            });
+        })
+    })
+</script>
+</html>

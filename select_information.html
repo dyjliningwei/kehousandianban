@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择学校-班级</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--weui-->
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/handover.css">
+</head>
+<body>
+<div class="animate">
+    <div class="handover">
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+
+        <div class="select_information">
+
+            <ul>
+                <li>
+                    <div class="weui-cells show margen-top">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p>
+                                    郑州一中
+                                    <i class="iconfont icon-youbian fr"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-cells weui-cells_radio show-content" style="margin-top: 0;">
+
+                        <label class="weui-cell weui-check__label" for="x1">
+                            <div class="weui-cell__bd">
+                                <p class="address">一年级一班</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" class="weui-check" name="radio1" id="x1">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="x2">
+                            <div class="weui-cell__bd">
+                                <p class="address">一年级二班</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="weui-check" id="x2" checked="checked">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-cells show margen-top">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p>
+                                    郑州二中
+                                    <i class="iconfont icon-youbian fr"></i>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-cells weui-cells_radio show-content" style="margin-top: 0;">
+
+                        <label class="weui-cell weui-check__label" for="x3">
+                            <div class="weui-cell__bd">
+                                <p class="address">二年级一班</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" class="weui-check" name="radio2" id="x3">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="x4">
+                            <div class="weui-cell__bd">
+                                <p class="address">二年级二班</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio2" class="weui-check" id="x4" checked="checked">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--返回-->
+
+<div class="go-back">
+    <button>
+        <i class="iconfont icon-fanhui"></i>
+        <span>返回</span>
+    </button>
+</div>
+
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--weui-->
+<script src="js/jquery-weui.min.js"></script>
+
+<script src="js/select_information.js"></script>
+</html>

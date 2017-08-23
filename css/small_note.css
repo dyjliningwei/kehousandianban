@@ -1,0 +1,209 @@
+.small-note-send{
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.icon-youbian{
+    color: #808080;
+}
+.linkman{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 13px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.img-upload-info{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.img-upload-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.img-upload .img-info{
+    width: 100%;
+    min-height: 60px;
+}
+
+.voice{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.voice-left{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 130px;
+}
+.voice-left .iconfont{
+    font-size: 35px;
+    color: #FE5400;
+}
+.voice-right{
+    width: 70%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#waves{
+    position: absolute;
+    left: 0px;
+}
+.text{
+    width: 100%;
+    margin-top: 10px;
+}
+.text textarea{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.recording{
+    width: 100%;
+    height: 230px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -230px;
+    z-index: 1000;
+    text-align: center;
+    transition: all .3s;
+}
+.recording.active{
+    transform: translateY(-100%);
+}
+.recording-time{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #555;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.recording button{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #ff7f34;
+    color: #fff;
+    margin-top: 60px;
+}
+.shade{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,.7) ;
+    display: none;
+    z-index: 80;
+}
+.button{
+    background-color: #fff;
+}
+.small-note-content{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+.items{
+    padding: 10px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size:45px 45px;
+    background-position:right top;
+    margin-bottom: 10px;
+}
+.items:last-child{
+    margin-bottom: 0;
+}
+.items ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+.items .time{
+    font-size: 13px;
+    color: #808080;
+}
+.icon-fasong{
+    color: #75acfc;
+}
+
+/*语音播放部分／*/
+.yuyin{
+    width: 50%;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #fe6921;
+    margin-top: 10px;
+}
+.yuyin_jt{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: rotate(45deg) translateY(-50%);
+    margin-top: -3px;
+    border-radius: 3px;
+    background-color: #fe6921;
+}
+.yuyin-bf{
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 5px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 0 2px;
+}
+.yuyin-bf::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 14px;
+    left: -10px;
+    top: 50%;
+    transform:translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #eef0ee;
+    box-sizing: border-box;
+}
+.yuyin-bf:nth-child(3)::before{
+    height: 20px;
+}
+.yuyin-bf:nth-child(4)::before{
+    height: 25px;
+}
+.actives{
+    animation: anmite 0.8s infinite alternate linear;
+}
+@keyframes anmite {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

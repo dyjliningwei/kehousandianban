@@ -1,0 +1,14 @@
+.no-data{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.no-data .iconfont{
+    font-size: 68px;
+    color: #ccc;
+}
+.no-data p{
+    font-size: 18px;
+    color: #ccc;
+}

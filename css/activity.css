@@ -1,10 +1,3 @@
-body{
-    background-color: #e3e3e3;
-}
-.banner{
-    width: 100%;
-    height: 130px;
-}
 .news{
     width: 100%;
     height: 50px;
@@ -62,6 +55,12 @@ body{
     border-radius: 5px;
     background-color: #FE5400;
     color: #fff;
+}
+.introduction{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
 }
 .activity-introduce{
     padding: 0 10px;

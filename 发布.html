@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://xiaobiaobing.wkmip.cn/mobile/opus/publish.html#tab1 -->
+<html class="pixel-ratio-2 retina ios ios-9 ios-9-1 ios-gt-8 ios-gt-7 ios-gt-6"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>发布</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .weui-navbar{
+            background-color: #fff;
+        }
+        .weui-navbar__item.weui-bar__item--on{
+            background-color: transparent;
+        }
+        .weui-navbar:after,.weui-navbar__item:after{
+            border: none;
+        }
+        .weui-navbar__item span.active{
+            border-bottom: 2px solid #fe6c1d;
+            padding-bottom: 10px;
+        }
+        .weui-uploader__input-box:before,.weui-uploader__input-box:after{
+            display: none;
+        }
+        .upcamera{
+            background: url('images/camera.png') no-repeat center;
+            background-size: 70% 70%;
+        }
+        .upvideo{
+            background: url('images/video.png') no-repeat center;
+            background-size: 70% 70%;
+        }
+    </style>
+</head>
+<body ontouchstart="">
+<form method="post" enctype="multipart/form-data" name="publish">
+    <div class="weui-cells__title"></div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" name="content" placeholder="请输入文字" rows="3"></textarea>
+                <div class="weui-textarea-counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                <span class="active">图片</span>
+            </a>
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab2">
+                <span>视频</span>
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui-cells weui-cells_form" style="margin-top: -1px;">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <div class="weui-uploader">
+                                <div class="weui-uploader__hd">
+                                    <p class="weui-uploader__title">图片上传</p>
+                                    <div class="weui-uploader__info"><span id="images_len">0</span>/9</div>
+                                </div>
+                                <div class="weui-uploader__bd">
+                                    <ul class="weui-uploader__files" id="uploaderFiles">
+                                    </ul>
+                                    <div class="weui-uploader__input-box upcamera" style="margin-top: 9px">
+                                        <input id="uploadImage" class="weui-uploader__input camera" type="file" accept="image/png,image/jpeg,image/gif,image/jpg" multiple="multiple" onchange="uploads(this)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <div class="weui-cells weui-cells_form" style="margin-top: -1px;">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <div class="weui-uploader">
+                                <div class="weui-uploader__hd">
+                                    <p class="weui-uploader__title">视频上传</p>
+                                    <div class="weui-uploader__info"><span id="video_len">0</span>/1</div>
+                                </div>
+                                <div class="weui-uploader__bd">
+                                    <ul class="weui-uploader__files" id="uploaderVideoFiles">
+
+                                    </ul>
+                                    <div class="weui-uploader__input-box upvideo" id="upload-video-box" style="margin-top: 9px">
+                                        <input id="uploadVideo" class="weui-uploader__input" type="file" accept="video/mp4,video/x-msvideo,video/x-flv" onchange="uploadvideo(this)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <button class="weui-btn weui-btn_primary weui-btn_disabled" style="background-color: #fe5400;" id="show-loading" disabled="">确定</button>
+    </div>
+</form>
+<div class="go-back">
+    <button type="button" onclick="javascript:onclick:history.go(-1)">
+        <i class="iconfont icon-fanhui"></i>
+        <span>返回</span>
+    </button>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-weui.js"></script>
+<script>
+
+//    tab切换
+    $('.weui-navbar__item').on('click',function () {
+        $(this).on('click',function () {
+            var index=$(this).index();
+            $(this).children(0).addClass('active');
+            $(this).siblings().children().removeClass('active');
+            if(index==0){
+                $('#tab1').addClass('weui-tab__bd-item--active')
+            }else {
+                $('#tab1').removeClass('weui-tab__bd-item--active')
+            }
+            if(index==1){
+                $('#tab2').addClass('weui-tab__bd-item--active')
+            }else {
+                $('#tab2').removeClass('weui-tab__bd-item--active')
+            }
+        })
+    })
+
+    function uploads(ele){
+        var current_len = parseInt($('#images_len').text());
+        if(current_len  >= 9){
+            $.alert("最多可上传9张图片!");
+            return false;
+        }else{
+            $.showLoading("图片上传中");
+            var formData = new FormData();
+            $(ele.files).each(function(i,e){
+                formData.append("file"+i, ele.files[i]);
+            })
+            $.ajax({
+                url: "/mobile/opus/upload.html",
+                type: 'POST',
+                data: formData,
+                async: true,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (result) {
+                    $.hideLoading();
+                    if(result.status){
+                        $(result.data).each(function(i,e){
+                            $("#uploaderFiles").append('<li class="weui-uploader__file" style="background-image:url('+e.url+');position: relative;margin-top: 9px">' +
+                                    '<span class="weui-badge" onclick="deletekey(this)" key="'+ e.key+'"  style="position: absolute;top: -.4em;right: -.4em;"><i class="fa fa-minus"></i></span>' +
+                                    '<input type="hidden" name="media[]" value="'+e.source+'">' +
+                                    '</li>')
+                        })
+                        //更新数字
+                        new_len = current_len + result.data.length;
+                        $('#images_len').text(new_len)
+                        //禁用视频上传
+                        $('#uploadVideo').attr('disabled',true);
+                    }else{
+                        alert(result.msg);
+                    }
+                },
+                error: function () {
+                    $.alert("文件上传异常!");
+                }
+            });
+        }
+    }
+    var isreplace = false;
+    function uploadvideo(ele){
+        $.showLoading("视频上传中");
+        var formData = new FormData();
+        formData.append("video",ele.files[0]);
+        if(isreplace){
+            deletevkey($("#uploaderVideoFiles").attr('key'))
+        }
+        $.ajax({
+            url: "/mobile/opus/upload.html",
+            type: 'POST',
+            data: formData,
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (result) {
+                $.hideLoading();
+                if(result.status){
+                    $("#uploaderVideoFiles").append('<li class="weui-uploader__file" style="background-image:url('+result.data[0].url+');position: relative;margin-top: 9px">' +
+                            '<span class="weui-badge" onclick="deletevkey(\''+result.data[0].key+'\')" style="position: absolute;top: -.4em;right: -.4em;"><i class="fa fa-minus"></i></span>' +
+                            '<input type="hidden" name="media[]" value="'+result.data[0].source+'">' +
+                            '</li>').attr('key',result.data[0].key)
+                    //更新数字
+                    $('#video_len').text(1)
+                    //禁用图片
+                    $('#uploadImage').attr('disabled',true);
+                    $('#uploadVideo').val('')
+                    isreplace = true;
+                }else{
+                    alert(result.msg);
+                }
+            },
+            error: function () {
+                alert("文件上传异常!");
+            }
+        });
+
+    }
+
+    $("#show-loading").click(function(){
+        $.showLoading();
+        $('#show-loading').attr('disabled',true).addClass('weui-btn_loading');
+        publish.submit();
+    })
+    $('.weui-textarea').keyup(function(){
+        //console.log($(this).val().length);
+        var text = $(this).val();
+        if(text.length > 200){
+            $(this).val(text.substr(0,200));
+            $.alert('您最多输入200个字符！')
+        }else{
+            if(text.length>0){
+                $('#show-loading').removeAttr('disabled').removeClass('weui-btn_disabled')
+            }else{
+                $('#show-loading').attr('disabled',true).addClass('weui-btn_disabled')
+            }
+            $('.weui-textarea-counter span').text(text.length);
+        }
+    })
+
+    function deletekey(_this){
+        var key = $(_this).attr('key');
+        var current_len = parseInt($('#images_len').text())
+        $.post("/mobile/opus/deletekey.html",{key:key},function(res){
+            if(res.status){
+                $(_this).parent().html('').remove()
+                //更新
+                current_len--;
+                $('#images_len').text(current_len);
+                if(current_len == 0){
+                    $('#uploadVideo').removeAttr('disabled');
+                }
+            }else{
+                $.alert(res.msg)
+            }
+        })
+    }
+    function deletevkey(key){
+        $.post("/mobile/opus/deletekey.html",{key:key},function(res){
+            if(res.status){
+                $('#uploaderVideoFiles').removeAttr('key').html('')
+                //更新
+                $('#video_len').text(0);
+                $('#uploadImage').removeAttr('disabled');
+                isreplace = false
+            }else{
+                $.alert(res.msg)
+            }
+        })
+    }
+
+</script>
+
+</body></html>

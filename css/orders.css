@@ -65,6 +65,9 @@ body{
     line-height: 45px;
     font-size: 14px;
     border-bottom: 1px solid #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .payment{
     width: 100%;

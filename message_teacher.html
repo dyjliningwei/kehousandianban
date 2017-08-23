@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/zyUpload.css">
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <!--<link rel="stylesheet" href="css/animation.css">-->
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="css/fs_messages.css">
     <link rel="stylesheet" href="css/message.css">
@@ -315,10 +315,21 @@
 
 <script src="js/fs_messages.js"></script>
 
+<script src="js/fastclick.js"></script>
+<script>
+    $(function () {
+        window.onload = function () {
+            if (!($('input').attr('type') == 'file')) {
+                FastClick.attach(document.body);
+            }
+        }
+    });
+</script>
+
 <script>
     $("#school").select({
         title: "选择学校",
-        items: ["郑州一中", "郑州二中", "郑州三中", "郑州四中", "郑州五中", "郑州六中","郑州六中","郑州六中"],
+        items: ["郑州一中", "郑州二中", "郑州三中", "郑州四中", "郑州五中", "郑州六中", "郑州六中", "郑州六中"],
     });
 
     $("#class").select({

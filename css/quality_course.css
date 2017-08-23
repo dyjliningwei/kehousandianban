@@ -1,10 +1,3 @@
-.banner{
-    width: 100%;
-    height: 130px;
-}
-.tab-info{
-    margin-top: 10px;
-}
 .weui-form-preview__btn_primary{
     color: #FE5400;
 }
@@ -19,4 +12,13 @@ button.weui-form-preview__btn{
 }
 .weui-form-preview__bd{
     color: #555;
+}
+.introduction{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+}
+.weui-form-preview:before{
+    border: none;
 }

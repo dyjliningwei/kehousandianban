@@ -6,12 +6,12 @@ $(function () {
 
     // 设置默认
 
-    var danxuan=$('.management ul li p i');
+    var danxuan=$('.management ul li p label');
 
     $.each(danxuan,function () {
         $(this).on('click',function () {
-            $(this).addClass('icon-danxuankuangyixuanzhong').removeClass('icon-Check');
-            $(this).parent().parent().parent().siblings().find('p i').removeClass('icon-danxuankuangyixuanzhong').addClass('icon-Check');
+            $(this).find('i').addClass('icon-danxuankuangyixuanzhong').removeClass('icon-Check');
+            $(this).parent().parent().siblings().find('p label i').removeClass('icon-danxuankuangyixuanzhong').addClass('icon-Check');
         })
     })
 

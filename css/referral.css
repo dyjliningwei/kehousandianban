@@ -1,0 +1,171 @@
+.referral{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.referral-header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.icon--laoshi{
+    font-size: 23px;
+    float: left;
+    color: #fc9522;
+    margin-right: 10px;
+}
+.referral-header span{
+    font-size: 14px;
+}
+.referral-info-honor{
+    width: 100%;
+    height: 150px;
+}
+.referral-info{
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.referral-info p{
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.referral-info p span{
+    font-size: 15px;
+}
+.referral-info p .indent{
+    display: block;
+    text-indent: 2em;
+}
+.referral-info .header{
+    width: 60px;
+    height: 60px;
+}
+.certificate-honor{
+    margin-bottom: 15px;
+}
+.certificate-honor img{
+    width: 33.3%;
+    height: 7em;
+    float: left;
+    padding: 5px;
+}
+
+.organization,.contact-us{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.organization h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+.organization-info-header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.organization-info-header .icon-jigoubanji{
+    font-size: 23px;
+    color: #ee7d82;
+    float: left;
+    margin-right: 10px;
+}
+.mien-header,.activity-header,.contact-us-header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.icon-cai,.icon-huodong,.icon-dianhua{
+    font-size: 23px;
+    float: left;
+    color: #d2297a;
+    margin-right: 10px;
+}
+.icon-dianhua{
+    color: #ec817c;
+}
+.icon--laoshi{
+    color: #fc9522;
+}
+.mien-header span,.activity-header span,.contact-us-header span{
+    font-size: 14px;
+}
+.mien-info{
+    width: 100%;
+    height: 150px;
+}
+.activity-info span{
+    display: block;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.contact-us-info p{
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.contact-us-info p span{
+    font-size: 14px;
+}
+.contact-us-info p span{
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contact-us-info p i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FE5400;
+}
+
+.evaluate{
+    padding: 10px;
+    margin-top: 10px;
+}
+.evaluate ul li{
+    position: relative;
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
+.evaluate ul li::after{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FE5400;
+}
+.evaluate ul li::before{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #FE5400;
+}
+.evaluate ul li span{
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    color: #555;
+}
+.evaluate ul li .time{
+    font-size: 12px;
+    color: #999;
+}

@@ -1,0 +1,362 @@
+.font{
+    font-size: 13px !important;
+}
+.color{
+    color: #999 !important;
+}
+.margin p{
+    margin: 8px 0;
+}
+.tea-header{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    background: url("../images/tea_bj.jpg")no-repeat;
+    background-size: 100% 100%;
+}
+.tea-c{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.tea-c a{
+    display: block;
+}
+.tea-x a{
+    display: block;
+    width: 50px;
+    height: 25px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    position: relative;
+    font-size: 12px;
+}
+.tea-x a.mes::after{
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: -8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f21217;
+}
+.tea-c .iconfont{
+    font-size: 20px;
+    color: #fff;
+}
+.header-log{
+    width: 25%;
+    padding-left: 10px;
+}
+.header-log img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.header-info{
+    width: 75%;
+}
+.header-info p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+}
+.tea-lit{
+    width: 100%;
+    background-color: #fff;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+}
+.tea-lit ul{
+    display: flex;
+}
+.tea-lit ul li{
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+}
+.tea-lit ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #555;
+}
+.tea-lit ul li a .iconfont{
+    font-size: 25px;
+    display: block;
+    margin: 5px 0;
+}
+.icon-kecheng{
+    color: #37a4f7;
+}
+.icon-xiaoxi1{
+    color: #27b352;
+}
+.icon-pinglun{
+    color: #ae66ec;
+}
+.look-xinxi,.look-hudong{
+    padding: 5px;
+    background-color: #FF9900;
+    color: #fff;
+    border-radius: 5px;
+    margin: 2px 0;
+    font-size: 12px;
+}
+.mes-list{
+    border-top: 5px solid #eee;
+}
+.mesg{
+    width: 25px;
+    height: 100%;
+    background-color: #37a4f7;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+.mesg .wd{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    right: -1px;
+    top: -1px;
+    font-size: 12px;
+    background-color: #f21217;
+}
+.cont-header{
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.info-data,.info-name{
+    padding: 0 10px;
+    line-height: 45px;
+}
+.info-name{
+    text-align: left;
+}
+.info-name span{
+    padding: 0 3px;
+    display: block;
+    width: 33.3%;
+    float: left;
+}
+.info-name span img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.particulars ul li p{
+    font-size: 14px;
+}
+.classifys{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #eee;
+}
+.classifys ul{
+    display: flex;
+    background-color: #fff;
+}
+.classifys ul li{
+    flex: 1;
+    -webkit-flex: 1;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+.classifys ul li.classifys-active{
+    border-bottom: 1px solid #FF9900;
+}
+.classifys ul li .iconfont{
+    font-size: 23px;
+}
+.classifys-list{
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbfb;
+    line-height: 50px;
+    padding: 0 5px;
+}
+.classifys-list ul{
+    display: flex;
+}
+.classifys-list ul li{
+    flex:1;
+    -webkit-flex: 1;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+.classifys-list ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #555;
+}
+.classifys-list ul li a.classifys-active{
+    color: #FF9900 !important;
+}
+.search{
+    width: 100%;
+    background-color: #fbfbfb;
+    padding: 0 10px;
+}
+.search input{
+    width: 60%;
+    height: 35px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.search button{
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #FF9900;
+    border-radius: 6px;
+}
+.weui-media-box__bd p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #555;
+}
+.st-xiangxi-info{
+    background-color: #f2f2f2;
+}
+.st-xiangxi-info{
+    padding: 10px;
+}
+.xiangxi-content{
+    margin: 20px 0;
+}
+.xiangxi-content p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #555;
+}
+.particular-list{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+}
+.particular-left{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+.img-auto{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.img-auto img{
+    width: 100%;
+    height: auto;
+}
+
+.particular-left p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555;
+}
+.particular-center{
+    width: 55%;
+    float: left;
+}
+.particular-center p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+    color: #555;
+}
+.particular-right{
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+.particular-right a{
+    display: block;
+    font-size: 14px;
+}
+.icon-fenxiang2{
+    color: #32b9a8;
+}
+.particular-right a .iconfont{
+    font-size: 18px;
+}
+.particular-right .gengd{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+.particular-right .fenx{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+.st-chengg .weui-media-box__desc{
+    -webkit-line-clamp:1;
+}
+.ranking{
+    width: 30px;
+    height: 30px;
+}
+.ranking-data{
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    background-color: #FF9900;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    border-radius: 50%;
+    background-color: #ccc;
+    font-size: 13px;
+}
+.classifys-list-info{
+    display: none;
+}
+.classifys ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lianxi-tel{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 35px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.huodong-file>h3{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}

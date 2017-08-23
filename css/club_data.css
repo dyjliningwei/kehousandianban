@@ -1,0 +1,37 @@
+.particulars ul li{
+    border-bottom: 2px solid transparent;
+}
+
+.particulars ul li.active{
+    border-bottom: 2px solid #fe6c1d;
+}
+.club-title{
+    width: 100%;
+    margin-top: 5px;
+}
+.club-info{
+    display: none;
+}
+.club-info.info-active{
+    display: block;
+}
+.font{
+    font-size: .8rem;
+    color: #555;
+}
+.font-small{
+    font-size: .7rem;
+    color: #999;
+}
+.weui-progress__bar{
+    height: 10px;
+    margin-left: 10px;
+}
+.my-center{
+    height: 180px;
+}
+.my-center-header a span{
+    color: #fff;
+    font-size: 13px;
+    line-height: 2.3;
+}

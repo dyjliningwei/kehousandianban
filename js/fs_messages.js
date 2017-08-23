@@ -8,29 +8,29 @@ $(function () {
 
     // 点击录音弹出录音框
 
-    $('.voice-start').on('click',function () {
+    $('.voice-start').on('click', function () {
         event.preventDefault();
         $('.recording').addClass('active');
-        $('.shade').css('display','block');
+        $('.shade').css('display', 'block');
     })
-    
+
     // 开始录音
 
-    var times=0;
+    var times = 0;
 
-    var timer=null;
+    var timer = null;
 
-    $('.start').on('touchstart mousedown',function () {
+    $('.start').on('touchstart mousedown', function () {
         event.preventDefault();
-        if($(this).text()=='按住录音'){
+        if ($(this).text() == '按住录音') {
             $(this).text('按住录音');
-            timer=setInterval(function () {
+            timer = setInterval(function () {
                 times++;
 
-                times=times<10?'0'+times:times;
+                times = times < 10 ? '0' + times : times;
 
                 $('.recording-times').text(times);
-            },1000);
+            }, 1000);
         }
 
         $('.recording-animation').addClass('before');
@@ -38,13 +38,13 @@ $(function () {
 
         //停止录音
 
-        $('.start').on('touchend mouseup',function (){
+        $('.start').on('touchend mouseup', function () {
             event.preventDefault();
             $(this).text('录音停止');
             clearInterval(timer);
             $('.recording-animation').removeClass('before');
             setTimeout(function () {
-                $('.shade').css('display','none');
+                $('.shade').css('display', 'none');
 
                 $('.recording').removeClass('active');
 
@@ -53,47 +53,46 @@ $(function () {
                 $('.start').text('按住录音');
 
                 //语音条显示
-                $('.yuyin1').css('display','block')
-            },1000)
+                $('.yuyin1').css('display', 'block')
+            }, 1000)
 
         })
 
     })
-    
-    
+
+
     //语音条播放
 
-    $('.yuyin1').on('click',function () {
+    $('.yuyin1').on('click', function () {
         event.preventDefault();
-        if($('.yuyin1 img').attr('src')=='images/audio2.png'){
-            $('.yuyin1 img').attr('src','images/audio2.gif')
-        }else {
-            $('.yuyin1 img').attr('src','images/audio2.png')
+        if ($('.yuyin1 img').attr('src') == 'images/audio2.png') {
+            $('.yuyin1 img').attr('src', 'images/audio2.gif')
+        } else {
+            $('.yuyin1 img').attr('src', 'images/audio2.png')
         }
     })
 
 
-
     //点击遮挡关闭
 
-    $('.shade').on('click',function () {
-        $(this).css('display','none');
+    $('.shade').on('click', function () {
+        $(this).css('display', 'none');
         $('.recording').removeClass('active');
     })
 
 
     //语音播放
 
-    $('.yuyin1').on('click',function () {
+    $('.yuyin1').on('click', function () {
 
     })
 
 
     // 小纸条列表语音播放
 
-    var yuyin=$('.yuyin');
+    var yuyin = $('.yuyin');
 
-    $.each(yuyin,function () {
+    $.each(yuyin, function () {
         $(this).on('click', function () {
             $(this).find('.yuyin-bf').toggleClass('actives');
             $(this).parent().parent().siblings().find('.yuyin-bf').removeClass('actives');
@@ -143,6 +142,22 @@ $(function () {
         });
 
     });
+
+
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isAndroid) {
+
+    }
+    if (isiOS) {
+        window.onload = function () {
+            $('.add_upload').on('click', function () {
+                event.preventDefault();
+                $('#fileImage').click()
+            })
+        }
+    }
 })
 
 

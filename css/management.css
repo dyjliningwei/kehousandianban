@@ -19,7 +19,10 @@ body{
     line-height: 40px;
     border-top: 1px dashed #ccc;
 }
-
+.management ul li p label{
+    display: block;
+    float: left;
+}
 .management ul li p label .iconfont{
     font-size: 20px;
     float: left;

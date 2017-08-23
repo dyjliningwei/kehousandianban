@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动概述</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body style="margin-bottom: 60px;">
+<div class="huodong-gaishu">
+
+    <!--banner-->
+    <div class="banner">
+        <div class="swiper-container swiper-container-height">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/huodong_list2.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/lianxi_tel.jpg" alt="">
+                        <span class="lianxi-tel">
+                            <p>参加活动请联系我们</p>
+                            <p>雒凌云：15617761285</p>
+                            <p>何宾华：15038280314</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--分类选择-->
+    <div class="particulars">
+        <ul>
+            <li>
+                <a href="huodong_gaishu.html" class="a-link" style="font-size: 14px;color: #FF9900">活动概述</a>
+            </li>
+            <li>
+                <a href="huodong_jindu.html" class="a-link" style="font-size: 14px;">活动进度</a>
+            </li>
+            <li>
+                <a href="baoming_zhinan.html" class="a-link" style="font-size: 14px;">报名指南</a>
+            </li>
+            <li>
+                <a href="liuchengtu.html" class="a-link" style="font-size: 14px;">指引流程图</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-->
+    <div class="button-line"></div>
+    <div class="hint">
+        <div class="hint-info">
+            <h3 style="font-weight: 500">活动概述</h3>
+            <ul>
+                <li><em>活动时间：</em>2017年9月18日</li>
+                <li><em>活动地点：</em>郑州市惠济区实验小学</li>
+                <li><em>主办单位：</em>共青团郑州市委、郑州市教育局、郑州市少工委</li>
+                <li><em>展示形式：</em>红领巾小社团线下成果展+小社团线上展示+微信投票+电视专访</li>
+                <li><em>参加社团：</em>郑州市各县（市）区选派的红领巾小社团</li>
+                <li><em>&diams;&nbsp;</em>“智”社团类别：科技类、益智类、红领巾农科院、网络信息类、航模类、创新实践类</li>
+                <li><em>&diams;&nbsp;</em>“体”社团类别：体育文化概念类小社团、体育活动类</li>
+                <li><em>&diams;&nbsp;</em>“美”社团类别：传统文化、艺术类、文学类、影视摄影类、舞蹈类、音乐类、手工类</li>
+                <li><em>数量要求：</em></li>
+                <li><em>&diams;&nbsp;</em>“智”社团类别：中原区、二七区、金水区、管城区选派不同种类优秀小社团4个，其它县（市）区选派不同种类优秀小社团3个</li>
+                <li><em>&diams;&nbsp;</em>“体”社团类别：各县（市）区选派体育文化概念类优秀小社团2个，其它体育活动类优秀小社团1个</li>
+                <li><em>&diams;&nbsp;</em>“美”社团类别：中原区、二七区、金水区、管城区选派不同种类优秀小社团5个，其它县（市）区选派不同种类优秀小社团4个</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--返回-->
+
+<div class="go-back">
+    <a href="javascript:window.history.back();" class="a-link">
+        <button>
+            <i class="iconfont icon-fanhui"></i>
+            <span>返回</span>
+        </button>
+    </a>
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--swiper-->
+<script src="js/swiper.jquery.min.js"></script>
+
+<script>
+    $(function () {
+
+        // banner
+
+        var swiper = new Swiper('.banner .swiper-container', {
+            pagination: '.banner .swiper-pagination',
+            paginationType : 'fraction',
+            paginationClickable: true,
+            initialSlide :0,
+            autoplay : 5000,
+            spaceBetween: 30,
+            paginationType : 'bullets',
+            hashnav: true,
+            hashnavWatchState: true,
+            loop:true,
+            autoplayDisableOnInteraction : false
+        })
+
+    })
+</script>
+</html>

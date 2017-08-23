@@ -12,7 +12,7 @@ $(function () {
         paginationClickable: true,
         initialSlide :0,
         autoplay : 5000,
-        spaceBetween: 30,
+        spaceBetween: 0,
         paginationType : 'bullets',
         hashnav: true,
         hashnavWatchState: true,

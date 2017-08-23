@@ -1,0 +1,187 @@
+.Down{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 1rem 0;
+	z-index: 99;
+}
+.ketang, .jiaoshi, .rongyu {
+	color: #999;
+	border: none;
+}
+.downPOne{
+	color: #fff;
+	font-size: 1.5rem;
+}
+.downp{
+	display: inline-block;
+}
+.clearfixone{
+	clear: both;
+}
+.headLogo{
+	width: 12%;
+	margin-left: 2%;
+	vertical-align: middle;
+}
+.downPOne{
+	width: 57%;
+	margin-left: 3%;
+	font-size: 1.5rem;
+}
+.downPTwo{
+	vertical-align: middle;
+	margin: 1% 2% 0 0;
+	color: #fff;
+	background: #eb544f;
+	padding: 2.5%;
+	border-radius: 5px;
+	font-size: 1.4rem;
+}
+.MienContent{
+	width: 94%;
+	margin: 20px auto;
+	background: #fff;
+}
+.MienTitle{
+	background: #fff;
+	padding: 1.5rem 0;
+	display: flex;
+}
+.MienTitle p{
+	display: inline-block;
+	width: 23%;
+	text-align: center;
+	font-size: 1.4rem;
+	flex: 1;
+	-webkit-flex: 1;
+}
+.mienA{
+	padding: 1rem 0;
+	color: #666;
+}
+.MienList{
+	width: 94%;
+	margin: 0 auto;
+}
+.MienListDate{
+	font-size: 1.2rem;
+	color: #999;
+	padding: -1rem 0 1.5rem;
+}
+.MienVideo video{
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+.MienVideo img{
+	width: 48%;
+	height: 10rem;
+	margin-bottom: 0.8rem;
+}
+.imgvideo{
+	height: 15rem !important;
+	object-fit: cover;
+}
+.MienVideo img:nth-child(2n){
+	margin-left: 2%;
+}
+.MienListTitle{
+	font-size: 1.5rem;
+	color: #333;
+}
+.MienListOne{
+	border-bottom: 1px solid #f0f0f0;
+}
+.MienTeacher,.MienCourseone,.MienRongyu{
+	display: none;
+}
+#imgVideoLogo{ 
+	width: 12%;
+	height: auto;
+}
+#videoDown{
+	height: 4rem;
+	line-height: 4rem;
+}
+#downApp{
+	padding: 0 2.5%;
+}
+.ketang,
+.jiaoshi,
+.rongyu {
+	color: #999;
+	border: none;
+}
+
+.jingpin {
+	color: #eb4c39;
+	border-bottom: 1px solid #eb4c39;
+}
+
+#MyPage {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.imgJieshi {
+	display: flex;
+	justify-content: space-between;
+	color: #fff !important;
+}
+
+.imgcolor {
+	color: #fff !important;
+}
+
+p,
+ul.text-list {
+	color: #fff;
+}
+
+.imgOne {
+	width: 48%;
+	object-fit: cover;
+}
+
+.MienVideo img {
+	width: 100%;
+}
+
+.row {
+	padding: 0;
+	margin: 0 auto;
+}
+
+#demo-test-gallery {
+	width: 98%;
+	margin: 0 auto;
+}
+
+#demo-test-gallery a {
+	width: 48%;
+}
+
+#demo-test-gallery a:nth-child(2n) {
+	margin-left: 2%;
+}
+
+.imgvideo {
+	object-fit: cover;
+}
+
+.MienListTwo {
+	position: relative;
+}
+
+.StopImg {
+	position: absolute;
+	left: 45%;
+	top: 9rem;
+	width: 2rem;
+}
+
+.pswp__img {
+	object-fit: cover;
+}

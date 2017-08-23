@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指引流程图</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body style="margin-bottom: 60px;">
+<div class="liuchengtu">
+
+    <!--banner-->
+    <div class="banner">
+        <div class="swiper-container swiper-container-height">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/huodong_list2.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/lianxi_tel.jpg" alt="">
+                        <span class="lianxi-tel">
+                            <p>参加活动请联系我们</p>
+                            <p>雒凌云：15617761285</p>
+                            <p>何宾华：15038280314</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--分类选择-->
+    <div class="particulars">
+        <ul>
+            <li>
+                <a href="huodong_gaishu.html" class="a-link" style="font-size: 14px;">活动概述</a>
+            </li>
+            <li>
+                <a href="huodong_jindu.html" class="a-link" style="font-size: 14px;">活动进度</a>
+            </li>
+            <li>
+                <a href="baoming_zhinan.html" class="a-link" style="font-size: 14px;">报名指南</a>
+            </li>
+            <li>
+                <a href="liuchengtu.html" class="a-link" style="font-size: 14px;color: #FF9900">指引流程图</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-->
+    <div class="button-line"></div>
+    <div class="hint">
+        <div class="hint-info">
+            <h3 style="font-weight: 500">指引流程图 <em style="font-size: 12px;color: #999">配图供参考，最终以实际为准</em></h3>
+            <ul>
+                <li><em>1.活动地点：郑州市惠济区实验小学操场</em></li>
+                <li>位置：郑州市惠济区开元路39号（惠济区政府向东300米）</li>
+                <li>
+                    <img src="images/sch_ditu.png" alt="">
+                </li>
+                <li><em>2、惠济区实验小学平面指示图</em></li>
+                <li>
+                    <img src="images/sch_pingmian.png" alt="">
+                </li>
+                <li>
+                    <img src="images/sch_3D.png" alt="">
+                </li>
+                <li><em>3、区域分布（140余所社团） 具体社团分布图待所有资料提交完整再下发</em></li>
+                <li>
+                    <img src="images/sch_fenbu.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--返回-->
+
+<div class="go-back">
+    <a href="javascript:window.history.back();" class="a-link">
+        <button>
+            <i class="iconfont icon-fanhui"></i>
+            <span>返回</span>
+        </button>
+    </a>
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--swiper-->
+<script src="js/swiper.jquery.min.js"></script>
+
+<script>
+    $(function () {
+
+        // banner
+
+        var swiper = new Swiper('.banner .swiper-container', {
+            pagination: '.banner .swiper-pagination',
+            paginationType: 'fraction',
+            paginationClickable: true,
+            initialSlide: 0,
+            autoplay: 5000,
+            spaceBetween: 30,
+            paginationType: 'bullets',
+            hashnav: true,
+            hashnavWatchState: true,
+            loop: true,
+            autoplayDisableOnInteraction: false
+        })
+
+    })
+</script>
+</html>

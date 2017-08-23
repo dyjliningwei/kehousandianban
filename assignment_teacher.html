@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/jquery-weui.css">
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/animation.css">
+
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="css/fs_messages.css">
     <link rel="stylesheet" href="css/list.css">
@@ -63,35 +63,23 @@
                 <div class="details-list list-active">
                     <div class="content-info">
 
-                        <div class="weui-cells weui-cells_form">
-                            <div class="weui-cell">
-                                <div class="weui-cell__hd"><label for="name" class="weui-label">职业</label></div>
-                                <div class="weui-cell__bd">
-                                    <input class="weui-input" id="job" type="text" value="" readonly="">
-                                </div>
-                            </div>
-
-                            <div class="weui-cell">
-                                <div class="weui-cell__hd"><label for="name" class="weui-label">手机</label></div>
-                                <div class="weui-cell__bd">
-                                    <input class="weui-input" id="mobile" type="text" value="" readonly="">
-                                </div>
-                            </div>
-                            <div class="weui-cell">
-                                <div class="weui-cell__hd"><label for="name" class="weui-label">爱好</label></div>
-                                <div class="weui-cell__bd">
-                                    <input class="weui-input" id="in" type="text" value="" readonly="">
-                                </div>
-                            </div>
-                        </div>
                         <ul>
                             <li>
                                 <span>学校</span>
-                                <input class="weui-input" id="school" type="text" value="" placeholder="请选择学校">
+                                <input class="weui-input"  type="text" value="" placeholder="请选择学校">
                             </li>
                             <li>
                                 <span>班级</span>
                                 <input class="weui-input" id="class" type="text" value="" placeholder="请选择班级">
+                            </li>
+                            <li>
+                                <span>班级</span>
+                                <select name="" id="">
+                                    <option value="">不知道</option>
+                                    <option value="">不知道</option>
+                                    <option value="">不知道</option>
+                                </select>
+                                <i class="iconfont icon-yfselect"></i>
                             </li>
 
                         </ul>
@@ -115,7 +103,10 @@
                                     <i class="iconfont icon-yuyin"></i>
                                 </div>
                                 <div class="voice-right">
-                                    <canvas id="waves"></canvas>
+                                    <div class="yuyin1" style="display: none">
+                                        <div class="yuyin_jt"></div>
+                                        <img src="images/audio2.png" alt="">
+                                    </div>
                                 </div>
                             </div>
 
@@ -136,26 +127,75 @@
                 <div class="details-list">
                     <div class="list">
                         <div class="lists">
-                            <div class="lists-header">
+                            <div class="lists-header" style="background-image:url('images/work_title.png');)">
                                 <h3>语文</h3>
                             </div>
-                            <div class="lists-info">
-                                <ul>
-                                    <li>不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道</li>
-                                </ul>
+                            <div class="weui-panel__bd">
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <i class="iconfont icon-kecheng"></i>
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">课程</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <i class="iconfont icon--laoshi"></i>
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">老师</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <i class="iconfont icon-shijian1"></i>
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">上课时间</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">上课时间上课时间上课时间上课时间上课时间上课时间上课时间</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <div class="yuyin1" style="display: block">
+                                            <div class="yuyin_jt"></div>
+                                            <img src="images/audio2.png" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <img src="images/explore.jpg" alt="" class="img">
+                                        <img src="images/explore.jpg" alt="" class="img">
+                                        <img src="images/explore.jpg" alt="" class="img">
+                                        <img src="images/explore.jpg" alt="" class="img">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="lists">
-                            <div class="lists-header">
-                                <h3>数学</h3>
+                            <div class="lists-header" style="background-image:url('images/work_title1.png');)">
+                                <h3>语文</h3>
                             </div>
-                            <div class="lists-info">
-                                <ul>
-                                    <li>不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道</li>
-                                </ul>
+                            <div class="weui-panel__bd">
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">课后三点半课后点</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">课后三点半</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__bd">
+                                        <p class="weui-media-box__desc">课后三点半</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -165,6 +205,7 @@
 
 </div>
 
+<!--录音-->
 <!--录音-->
 
 <div class="recording">
@@ -177,9 +218,8 @@
         <i class="iconfont icon-yuyin"></i>
     </div>
 
-    <button class="start">开始录音</button>
+    <button class="start">按住录音</button>
 </div>
-
 
 <!--遮罩-->
 
@@ -218,6 +258,16 @@
 </body>
 <!--jquery-->
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+
+
+
+
 <!--tab切换-->
 <script src="js/tab.js"></script>
 <!--weui-->
@@ -225,7 +275,6 @@
 <!--zyupload文件上传-->
 <script type="text/javascript" src="js/zyFile.js"></script>
 <script src="js/zyUpload.js"></script>
-
 <script src="js/animation.js"></script>
 
 <script src="js/fs_messages.js"></script>
@@ -233,7 +282,7 @@
 <script>
     $("#school").select({
         title: "选择学校",
-        items: ["郑州一中", "郑州二中", "郑州三中", "郑州四中", "郑州五中", "郑州六中","郑州六中","郑州六中"],
+        items: ["郑州一中", "郑州二中", "郑州三中", "郑州四中", "郑州五中", "郑州六中", "郑州六中", "郑州六中"],
     });
 
     $("#class").select({
@@ -242,113 +291,4 @@
     });
 </script>
 
-
-
-<script>
-    $("#job").select({
-        title: "选择职业",
-        items: ["法官", "医生", "猎人", "学生", "记者", "其他"],
-        onChange: function(d) {
-            console.log(this, d);
-        },
-        onClose: function() {
-            console.log("close");
-        },
-        onOpen: function() {
-            console.log("open");
-        },
-    });
-    $("#mobile").select({
-        title: "选择手机",
-        items: [
-            {
-                title: "iPhone 3GS",
-                value: "001",
-            },
-            {
-                title: "iPhone 5",
-                value: "002",
-            },
-            {
-                title: "iPhone 5S",
-                value: "003",
-            },
-            {
-                title: "iPhone 6",
-                value: "004",
-            },
-            {
-                title: "iPhone 6S",
-                value: "005",
-            },
-            {
-                title: "iPhone 6P",
-                value: "006",
-            },
-            {
-                title: "iPhone 6SP",
-                value: "007",
-            },
-            {
-                title: "iPhone SE",
-                value: "008",
-            },
-            {
-                title: "iPhone 7",
-                value: "009"
-            }
-        ]
-    });
-    $("#in").select({
-        title: "您的爱好",
-        multi: true,
-        min: 2,
-        max: 3,
-        items: [
-            {
-                title: "画画",
-                value: 1,
-                description: "额外的数据1"
-            },
-            {
-                title: "打球",
-                value: 2,
-                description: "额外的数据2"
-            },
-            {
-                title: "唱歌",
-                value: 3,
-                description: "额外的数据3"
-            },
-            {
-                title: "游泳",
-                value: 4,
-                description: "额外的数据4"
-            },
-            {
-                title: "健身",
-                value: 5,
-                description: "额外的数据5"
-            },
-            {
-                title: "睡觉",
-                value: 6,
-                description: "额外的数据6"
-            },
-        ],
-        beforeClose: function(values, titles) {
-            if(values.indexOf("6") !== -1) {
-                $.toast("不能选睡觉", "cancel");
-                return false;
-            }
-            return true;
-        },
-        onChange: function(d) {
-            console.log(this, d);
-        },
-        onClose: function (d) {
-            console.log('close')
-        }
-    });
-</script>
 </html>

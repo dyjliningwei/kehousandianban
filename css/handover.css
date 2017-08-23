@@ -8,3 +8,18 @@
     font-size: 13px;
     color: #999;
 }
+.icon-youbian{
+    color: #555;
+    transform: rotate(90deg);
+    transition: all .5s;
+}
+.select_information .weui-cells_radio{
+    display: none;
+}
+
+.icon-youbian.active{
+    transform: rotate(270deg);
+}
+.select_information{
+    margin-top: 20px;
+}

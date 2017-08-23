@@ -68,17 +68,12 @@
     overflow: hidden;
     position: relative;
 }
-
-.yuyin1 {
-    width: 80% !important;
+.voice-right .yuyin1{
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateY(-100%);
-    display: none;
+    transform: translateY(-50%);
 }
-
-.voice .yuyin1 img {
+.yuyin1 img {
     margin-left: 6px;
     width: 35px;
     height: 25px;
@@ -245,14 +240,12 @@
 
 /*语音播放部分／*/
 .yuyin, .yuyin1 {
-    width: 50%;
+    width: 145px;
     height: 35px;
     margin-left: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
     position: relative;
     background-color: #fe6921;
-    margin-top: 10px;
 }
 
 .yuyin_jt {

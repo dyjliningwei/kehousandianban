@@ -1,0 +1,45 @@
+.interactive{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.scrip,.leave,.assignment,.notice{
+    width: 50%;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.scrip,.assignment{
+    margin-top: 25px;
+    float: left;
+}
+.leave,.notice{
+    margin-top: 25px;
+    float: right;
+}
+.scrip a,.leave a,.assignment a,.notice a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scrip a img,.leave a img,.assignment a img,.notice a img{
+    width: 35px;
+    height: 85px;
+}
+.leave a img{
+    width: 60px;
+}
+.assignment a img{
+    width: 80px;
+}
+.notice a img{
+    width: 90px;
+}
+.scrip a p,.leave a p,.assignment a p,.notice a p{
+    font-size: 16px;
+    margin-top: 10px;
+}
