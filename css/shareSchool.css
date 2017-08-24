@@ -75,7 +75,7 @@
 .schoolNFont{
 	/*width: calc(80%-6rem);*/
 	width: 70%;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	display: inline-block;
 	margin-left: 28%;
 	overflow: hidden;
@@ -172,7 +172,7 @@
 	margin-top: 0.4rem;
 }
 .delMoney{
-	font-size: 0.9rem;
+	font-size: 0.5rem;
 	color: #999;
 }
 .priceImg{
@@ -374,8 +374,8 @@
 
 .schoolLogoImg {
 	object-fit: cover;
-	width: 4.5rem;
-	height: 4.5rem;
+	width: 4rem;
+	height: 4rem;
 }
 
 .lunbo {
@@ -401,7 +401,7 @@
 	color: #999;
 }
 .abstractDown .iconfont{
-	display: block;
+	display: inline-block;
 	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 }
