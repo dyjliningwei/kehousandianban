@@ -47,19 +47,19 @@
 }
 .MienTitle{
 	background: #fff;
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 	display: flex;
 }
 .MienTitle p{
 	display: inline-block;
 	width: 23%;
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1rem;
 	flex: 1;
 	-webkit-flex: 1;
 }
 .mienA{
-	padding: 1rem 0;
+	padding: 0.7rem 0;
 	color: #666;
 }
 .MienList{
@@ -67,7 +67,7 @@
 	margin: 0 auto;
 }
 .MienListDate{
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 	color: #999;
 	padding: -1rem 0 1.5rem;
 }
@@ -81,7 +81,7 @@
 	margin-bottom: 0.8rem;
 }
 .imgvideo{
-	height: 15rem !important;
+	height: 10rem !important;
 	object-fit: cover;
 }
 .MienVideo img:nth-child(2n){
@@ -177,9 +177,11 @@ ul.text-list {
 
 .StopImg {
 	position: absolute;
-	left: 45%;
-	top: 9rem;
-	width: 2rem;
+	left: 50%;
+	top: 50%;
+	width: 3rem;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
 }
 
 .pswp__img {

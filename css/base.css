@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
     line-height: inherit;
     font-family: 'microsoft yahei';
-    position: relative;
 }
 
 /*各浏览器显示不同，去掉蓝色边框*/

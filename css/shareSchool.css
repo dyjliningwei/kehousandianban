@@ -10,7 +10,7 @@
 }
 .lunboImg{
 	width: 100%;
-	height: 16em;
+	height: 12em;
 }
 .Down{
 	width: 100%;
@@ -31,7 +31,7 @@
 .priceTro{
 	display: flex;	
 	justify-content: space-around;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 }
 .clearfixone{
 	clear: both;
@@ -61,7 +61,7 @@
 	position: relative;
 }
 .coursePrice{
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 .schoolLogoImg{
 	border-radius: 5px;
@@ -75,7 +75,7 @@
 .schoolNFont{
 	/*width: calc(80%-6rem);*/
 	width: 70%;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	display: inline-block;
 	margin-left: 28%;
 	overflow: hidden;
@@ -99,7 +99,7 @@
 	color: #eb4c39;
 }
 .priceOne{
-	margin: 2.6rem 5% 0;
+	margin: 0rem 5% 0;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #F0F0F0;
 	position: relative;
@@ -160,27 +160,27 @@
 }
 .money{
 	display: inline-block;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	color: #eb4c39;
 }
 .moneyPrice{
 	color: #eb4c39;
-	font-size: 2.6rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 .CourseRight{
 	margin-top: 0.4rem;
 }
 .delMoney{
-	font-size: 1.3rem;
+	font-size: 0.9rem;
 	color: #999;
 }
 .priceImg{
 	width: 1.2rem;
 }
 .returnTicket{
-	padding: 1rem 0;
-	margin-top: 1rem;
+	padding: 0.6rem 0;
+	margin-top: 0.5rem;
 }
 .returnTicket img{
 	width: 8%;
@@ -194,16 +194,16 @@
 	margin-left: 2%;
 	background: #eb4c39;
 	color: #fff;
-	padding: 0.3rem 0.8rem;
-	font-size: 1.2rem;
+	padding: 0.2rem 0.6rem;
+	font-size: 0.5rem;
 	border-radius: 5px;
 }
 .quanTro{
 	display: inline-block;
-	font-size: 1.2rem;
+	font-size: 0.76rem;
 	width: 76%;	
-	margin-left: 2%;
-	color:#666 ;
+	margin-left: 1%;
+	color:#666;
 }
 .courseAbstract{
 	margin-top: 1rem;
@@ -211,9 +211,9 @@
 	padding: 1rem 0;
 }
 .abstractTitle{
-	padding-left: 1.3rem;
+	padding-left: 1rem;
 	border-left: 3px solid #eb4c39;
-	font-size: 1.7rem;
+	font-size: 1rem;
 	color: #999;
 	margin-bottom: 1rem;
 }
@@ -225,16 +225,15 @@
 }
 .abstractContent p{
 	line-height: 1.8rem;
-	font-size: 1.4rem;
-	padding-top: 0.6rem;
+	font-size: 0.9rem;
+	padding-top: 0rem;
 }
 .courseP{
 	text-indent: 2.6rem;
-	height: 6rem;
 	overflow: hidden;
 }
 .courseP.courseP-active{
-	height: auto;
+	height: auto !important;
 }
 .addrFont{
 	width: 79%;
@@ -246,7 +245,7 @@
 }
 .icon-dizhi{
 	text-align: center;
-	font-size: 2.2rem !important;
+	font-size: 2rem !important;
 	color: #eb4c39;
 }
 .juli{
@@ -267,8 +266,7 @@
 	width: 77%;
 }
 .organiRight>p{
-	font-size: 1.5rem;
-	
+	font-size: 1rem;
 }
 .origainIng{
 	width: 18%;
@@ -285,7 +283,7 @@
 }
 .organiThree span{
 	color: #666;
-	font-size: 1.1rem;
+	font-size: 0.7rem;
 }
 .mienTitle{
 	padding-bottom: 3rem;
@@ -293,7 +291,7 @@
 .mienMore{
 	margin-right: 3%;
 	margin-top: 0.5rem;
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 	color: #999;
 	text-decoration: none;
 }
@@ -304,7 +302,7 @@
 }
 .mienTwo img{
 	width: 100%;
-	height: 9.2rem;
+	height: 7rem;
 }
 .articleOne{
 	width: 100%;
@@ -376,8 +374,8 @@
 
 .schoolLogoImg {
 	object-fit: cover;
-	width: 6rem;
-	height: 6rem;
+	width: 4.5rem;
+	height: 4.5rem;
 }
 
 .lunbo {
