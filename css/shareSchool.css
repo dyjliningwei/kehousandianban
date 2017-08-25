@@ -195,7 +195,7 @@
 	background: #eb4c39;
 	color: #fff;
 	padding: 0.2rem 0.6rem;
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	border-radius: 5px;
 }
 .quanTro{
@@ -303,6 +303,17 @@
 .mienTwo img{
 	width: 100%;
 	height: 7rem;
+}
+.mienTwo .kc_name{
+	color: #555;
+	margin-top: .3rem;
+	line-height: 1;
+}
+.mienTwo .kc_tuijian{
+	margin-top: .3rem;
+	line-height: 1;
+	font-size: .6rem;
+	color: #FF9900;
 }
 .articleOne{
 	width: 100%;

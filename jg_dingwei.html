@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>机构定位</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="generator" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="">
+    <!--weui-->
+    <link rel="stylesheet" href="css/weui.min.css">
+    <!--图标字体-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jigou_show.css">
+    <link rel="stylesheet" href="css/jg_dingwei.css">
+</head>
+<body>
+<!--头部-->
+<div class="jg-header">
+    <div class="weui-search-bar" id="searchBar" style="background-color: transparent;padding: 10px 5px">
+        <form class="weui-search-bar__form" style="border-radius: 30px;overflow: hidden">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="weui-search-bar__label" id="searchText">
+                <i class="weui-icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel" style="color: #fff">取消</a>
+    </div>
+</div>
+<div class="jg-dw">
+    <div class="dw-title">
+        <span class="block">定位/最近访问</span>
+    </div>
+    <div class="dw-info clearfix">
+        <ul>
+            <li>
+                <button>
+                    <i class="iconfont icon-dingwei"></i>
+                    郑州
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dw-title">
+        <span class="block">热门城市</span>
+    </div>
+    <div class="dw-info">
+        <ul>
+            <li>
+                <button>郑州</button>
+            </li>
+            <li>
+                <button>安阳</button>
+            </li>
+            <li>
+                <button>洛阳</button>
+            </li>
+            <li>
+                <button>开封</button>
+            </li>
+            <li>
+                <button>濮阳</button>
+            </li>
+            <li>
+                <button>商丘</button>
+            </li>
+            <li>
+                <button>南阳</button>
+            </li>
+            <li>
+                <button>漯河</button>
+            </li>
+            <li>
+                <button>信阳</button>
+            </li>
+            <li>
+                <button>周口</button>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<!--jquery-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--weui-->
+<script src="js/jquery-weui.min.js"></script>
+<script>
+    $(function () {
+
+//        选择位置
+        $('.dw-info button').each(function () {
+            $(this).on('touchstart mousedown',function () {
+                $(this).css('backgroundColor','#e5e5e5')
+            })
+            $(this).on('touchend mouseup',function () {
+                $(this).css('backgroundColor','#fff')
+                window.history.back();
+            })
+        })
+    })
+</script>
+</html>
