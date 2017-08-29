@@ -85,9 +85,7 @@ select.prototype = {
                 // 遮罩/内容选择关闭
                 function close(_this) {
                     // 关闭遮罩
-                    setTimeout(function () {
-                        $('.mask').css('display', 'none');
-                    }, 600);
+                    $('.mask').css('display', 'none');
                     // 关闭内容框
                     $('.select-info').css({
                         'transform': 'translateY(100%)',
